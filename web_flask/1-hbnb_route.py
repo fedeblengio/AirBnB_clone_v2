@@ -1,14 +1,18 @@
 from flask import Flask
-
 app = Flask(__name__)
+
+"""Task-1"""
+
 
 @app.route('/', strict_slashes=False)
 def index():
-  return "Hello HBNB!"
+    return "Hello HBNB!"
+
 
 @app.route('/hbnb', strict_slashes=False)
 def hbnb():
-  return "HBNB" 
+    return "HBNB"
+
 
 if __name__ == '__main__':
     app.debug = True

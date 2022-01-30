@@ -23,8 +23,9 @@ def replaceTexT(text):
     return "C " + text
 
 
+@app.route('/python', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
-def replaceTexT_2(text):
+def replaceTexT_2(text='is cool'):
     """text2"""
     text = text.replace("_", " ")
     return "Python " + text
